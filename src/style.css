@@ -1,0 +1,82 @@
+@font-face {
+    font-family: jetbrains_mono;
+    src: url("../public/font/jetbrainsmono.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: sf_mono;
+    src: url('../public/font/sfmono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: jetbrains_mono;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+
+#intro {
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.ascii-art {
+    max-width: 100%;
+    font-family: sf_mono;
+    font-size: 0.6rem;
+    white-space: pre;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .ascii-art {
+        font-size: 1rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .ascii-art {
+        font-size: 1.5rem;
+    }
+}
