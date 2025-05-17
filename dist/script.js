@@ -1,5 +1,3 @@
-"use strict";
-//import keyboard_ascii from './ascii-art/keyboard.ts';
-//let text: HTMLTextAreaElement = document.getElementById("ascii-keyboard") as HTMLTextAreaElement;
-//text.innerText = "123456789";
-//console.log(keyboard_ascii[0]);
+import { keyboard_ascii } from "./ascii-art/keyboard.js";
+let text = document.getElementById("ascii-keyboard");
+text.textContent = keyboard_ascii.join("\n");
