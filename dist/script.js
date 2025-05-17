@@ -1,3 +1,10 @@
 import { keyboard_ascii } from "./ascii-art/keyboard.js";
-let text = document.getElementById("ascii-keyboard");
-text.textContent = keyboard_ascii.join("\n");
+const animateAscii = (preElementId, ascii, delay) => {
+    let text = document.getElementById(preElementId);
+    let index = 0;
+    setInterval(() => {
+        text.textContent = ascii[index];
+        index = (index + 1) % ascii.length; // ถ้าเกินสุด ก็กลับไปเริ่มต้น
+    }, delay);
+};
+animateAscii("ascii-keyboard", keyboard_ascii, 500);
